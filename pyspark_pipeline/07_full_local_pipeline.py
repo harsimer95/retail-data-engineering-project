@@ -1,6 +1,7 @@
 import os
 import sys
 import shutil
+from datetime import datetime
 
 os.environ["PYSPARK_PYTHON"] = sys.executable
 os.environ["PYSPARK_DRIVER_PYTHON"] = sys.executable
@@ -18,10 +19,28 @@ from pyspark.sql.functions import (
 )
 
 # ====================================================
+# LOGGING SETUP
+# ====================================================
+
+LOG_FILE_PATH = "data/logs/pipeline_log.txt"
+
+
+def write_log(message):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_message = f"[{timestamp}] {message}"
+    print(log_message)
+
+    with open(LOG_FILE_PATH, "a") as log_file:
+        log_file.write(log_message + "\n")
+
+
+write_log("Pipeline started")
+
+# ====================================================
 # FILE PATH SETUP
 # ====================================================
 
-incoming_file_path = "data/incoming/sales_2026-06-24.csv"
+incoming_file_path = "data/incoming/sales_2026-06-30.csv"
 
 file_name = os.path.basename(incoming_file_path)
 folder_name = os.path.splitext(file_name)[0]
@@ -37,7 +56,7 @@ rejected_output_path = f"data/rejected/{folder_name}"
 # ====================================================
 
 shutil.copy2(incoming_file_path, raw_file_path)
-print("File copied to raw zone:", raw_file_path)
+write_log(f"File copied to raw zone: {raw_file_path}")
 
 # ====================================================
 # SPARK SESSION
@@ -47,6 +66,8 @@ spark = SparkSession.builder \
     .master("local[*]") \
     .appName("Full Local Retail Pipeline") \
     .getOrCreate()
+
+write_log("Spark session started")
 
 # ====================================================
 # EXTRACT FROM RAW ZONE
@@ -60,6 +81,8 @@ df = spark.read.option("header", True) \
     .option("encoding", "ISO-8859-1") \
     .csv(raw_file_path)
 
+write_log(f"Raw file loaded into Spark: {raw_file_path}")
+
 # ====================================================
 # STANDARDIZE COLUMN NAMES
 # ====================================================
@@ -67,6 +90,8 @@ df = spark.read.option("header", True) \
 for column in df.columns:
     new_column = column.lower().replace(" ", "_").replace("-", "_")
     df = df.withColumnRenamed(column, new_column)
+
+write_log("Column names standardized")
 
 # ====================================================
 # TYPE CONVERSIONS
@@ -80,6 +105,8 @@ df = df.withColumn("quantity", col("quantity").cast("integer"))
 df = df.withColumn("discount", col("discount").cast("double"))
 df = df.withColumn("profit", col("profit").cast("double"))
 
+write_log("Data type conversions completed")
+
 # ====================================================
 # FEATURE ENGINEERING
 # ====================================================
@@ -87,6 +114,8 @@ df = df.withColumn("profit", col("profit").cast("double"))
 df = df.withColumn("order_year", year(col("order_date")))
 df = df.withColumn("order_month", month(col("order_date")))
 df = df.withColumn("shipping_days", datediff(col("ship_date"), col("order_date")))
+
+write_log("Feature engineering completed")
 
 # ====================================================
 # BUSINESS RULE VALIDATION
@@ -134,6 +163,8 @@ df = df.withColumn(
     )
 )
 
+write_log("Business rule validation completed")
+
 # ====================================================
 # SPLIT VALID AND REJECTED RECORDS
 # ====================================================
@@ -159,13 +190,16 @@ rejected_df = rejected_df.drop(
 # VALIDATION SUMMARY
 # ====================================================
 
-print("Input file:", incoming_file_path)
-print("Raw file:", raw_file_path)
-print("Output folder name:", folder_name)
+total_records = df.count()
+valid_records = valid_df.count()
+rejected_records = rejected_df.count()
 
-print("Total records:", df.count())
-print("Valid records:", valid_df.count())
-print("Rejected records:", rejected_df.count())
+write_log(f"Input file: {incoming_file_path}")
+write_log(f"Raw file: {raw_file_path}")
+write_log(f"Output folder name: {folder_name}")
+write_log(f"Total records: {total_records}")
+write_log(f"Valid records: {valid_records}")
+write_log(f"Rejected records: {rejected_records}")
 
 print("Sample rejected records:")
 rejected_df.select(
@@ -186,14 +220,16 @@ rejected_df.select(
 valid_df.write.mode("overwrite").parquet(processed_output_path)
 rejected_df.write.mode("overwrite").parquet(rejected_output_path)
 
-print("Valid processed data saved to:", processed_output_path)
-print("Rejected data saved to:", rejected_output_path)
+write_log(f"Valid processed data saved to: {processed_output_path}")
+write_log(f"Rejected data saved to: {rejected_output_path}")
 
 # ====================================================
 # ARCHIVE ORIGINAL INCOMING FILE AFTER SUCCESS
 # ====================================================
 
 shutil.move(incoming_file_path, archive_file_path)
-print("Original incoming file moved to archive:", archive_file_path)
+write_log(f"Original incoming file moved to archive: {archive_file_path}")
 
 spark.stop()
+write_log("Spark session stopped")
+write_log("Pipeline completed successfully")

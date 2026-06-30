@@ -1,0 +1,20 @@
+[2026-06-30 19:26:56] Pipeline started
+[2026-06-30 19:27:35] Pipeline started
+[2026-06-30 19:27:35] File copied to raw zone: data/raw/sales_2026-06-30.csv
+[2026-06-30 19:27:43] Spark session started
+[2026-06-30 19:27:47] Raw file loaded into Spark: data/raw/sales_2026-06-30.csv
+[2026-06-30 19:27:48] Column names standardized
+[2026-06-30 19:27:48] Data type conversions completed
+[2026-06-30 19:27:48] Feature engineering completed
+[2026-06-30 19:27:49] Business rule validation completed
+[2026-06-30 19:27:57] Input file: data/incoming/sales_2026-06-30.csv
+[2026-06-30 19:27:57] Raw file: data/raw/sales_2026-06-30.csv
+[2026-06-30 19:27:57] Output folder name: sales_2026-06-30
+[2026-06-30 19:27:57] Total records: 100
+[2026-06-30 19:27:57] Valid records: 95
+[2026-06-30 19:27:57] Rejected records: 5
+[2026-06-30 19:28:05] Valid processed data saved to: data/processed/sales_2026-06-30
+[2026-06-30 19:28:05] Rejected data saved to: data/rejected/sales_2026-06-30
+[2026-06-30 19:28:05] Original incoming file moved to archive: data/archive/sales_2026-06-30.csv
+[2026-06-30 19:28:05] Spark session stopped
+[2026-06-30 19:28:05] Pipeline completed successfully
