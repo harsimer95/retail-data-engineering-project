@@ -1,0 +1,101 @@
+row_id,order_id,order_date,ship_date,ship_mode,customer_id,customer_name,segment,country,city,state,postal_code,region,product_id,category,sub_category,product_name,sales,quantity,discount,profit
+1,ORD-2026-06-24-1,6/24/2026,6/27/2026,Second Class,CUST-2648,Customer 1,Corporate,United States,Los Angeles,California,48566,Central,PROD-1759,Furniture,Binders,Product 60,1953.47,2,1.78,-113.33
+2,ORD-2026-06-24-2,6/24/2026,6/25/2026,Second Class,CUST-9044,Customer 2,Corporate,United States,Chicago,Illinois,66661,Central,PROD-2106,Furniture,Binders,Product 68,1617.02,2,1.17,-219.16
+3,ORD-2026-06-24-3,6/24/2026,7/1/2026,Same Day,CUST-5098,Customer 3,Corporate,United States,Los Angeles,California,12714,East,PROD-4981,Technology,Tables,Product 71,201.91,-2,0.0,-15.75
+4,ORD-2026-06-24-4,6/24/2026,6/25/2026,First Class,CUST-4942,Customer 4,Consumer,United States,Seattle,Washington,45011,East,PROD-3758,Technology,Chairs,Product 48,-473.24,3,0.1,-44.2
+5,ORD-2026-06-24-5,6/24/2026,6/22/2026,Same Day,CUST-2128,Customer 5,Corporate,United States,Seattle,Washington,47563,West,PROD-2151,Technology,Storage,Product 7,729.76,7,0.1,-37.95
+6,ORD-2026-06-24-6,6/24/2026,6/26/2026,Same Day,CUST-9625,Customer 6,Corporate,United States,Seattle,Washington,30907,Central,PROD-5016,Office Supplies,Binders,Product 38,1007.54,4,0.0,282.69
+7,ORD-2026-06-24-7,6/24/2026,6/29/2026,Standard Class,CUST-8288,Customer 7,Corporate,United States,Seattle,Washington,88915,South,PROD-9652,Technology,Tables,Product 39,672.02,3,0.0,151.55
+8,ORD-2026-06-24-8,6/24/2026,6/27/2026,First Class,CUST-2087,Customer 8,Corporate,United States,Los Angeles,California,79915,South,PROD-8089,Technology,Phones,Product 20,1340.92,9,0.1,-155.35
+9,ORD-2026-06-24-9,6/24/2026,6/28/2026,First Class,CUST-9364,Customer 9,Corporate,United States,New York,New York,60686,South,PROD-9023,Technology,Tables,Product 17,359.39,9,0.4,27.57
+10,ORD-2026-06-24-10,6/24/2026,6/25/2026,Standard Class,CUST-5219,Customer 10,Consumer,United States,Los Angeles,California,30263,East,PROD-4043,Furniture,Phones,Product 47,505.2,2,0.1,-84.16
+11,ORD-2026-06-24-11,6/24/2026,6/26/2026,Second Class,CUST-3794,Customer 11,Consumer,United States,New York,New York,42558,West,PROD-4984,Office Supplies,Binders,Product 92,249.73,3,0.1,70.0
+12,ORD-2026-06-24-12,6/24/2026,7/1/2026,Standard Class,CUST-9850,Customer 12,Consumer,United States,Los Angeles,California,90711,South,PROD-4790,Furniture,Binders,Product 25,1056.95,9,0.3,133.85
+13,ORD-2026-06-24-13,6/24/2026,6/30/2026,Second Class,CUST-8853,Customer 13,Home Office,United States,Houston,Texas,48910,West,PROD-3268,Office Supplies,Chairs,Product 4,964.57,7,0.4,179.15
+14,ORD-2026-06-24-14,6/24/2026,6/28/2026,Second Class,CUST-2946,Customer 14,Corporate,United States,Houston,Texas,52519,East,PROD-3416,Furniture,Chairs,Product 31,1668.99,8,0.1,-13.44
+15,ORD-2026-06-24-15,6/24/2026,7/1/2026,First Class,CUST-6518,Customer 15,Consumer,United States,Los Angeles,California,82553,West,PROD-7623,Furniture,Binders,Product 1,1540.88,1,0.2,188.31
+16,ORD-2026-06-24-16,6/24/2026,6/26/2026,First Class,CUST-8133,Customer 16,Corporate,United States,Chicago,Illinois,87867,West,PROD-3225,Office Supplies,Tables,Product 47,1467.85,9,0.0,256.33
+17,ORD-2026-06-24-17,6/24/2026,6/25/2026,Second Class,CUST-4576,Customer 17,Consumer,United States,New York,New York,10425,East,PROD-1678,Furniture,Chairs,Product 78,1469.39,6,0.3,-289.51
+18,ORD-2026-06-24-18,6/24/2026,7/1/2026,Same Day,CUST-7382,Customer 18,Consumer,United States,Chicago,Illinois,24526,West,PROD-3670,Furniture,Tables,Product 31,129.26,3,0.0,-25.12
+19,ORD-2026-06-24-19,6/24/2026,6/25/2026,Second Class,CUST-6475,Customer 19,Consumer,United States,Seattle,Washington,21266,West,PROD-2555,Technology,Phones,Product 92,1793.64,6,0.2,66.44
+20,ORD-2026-06-24-20,6/24/2026,6/25/2026,Standard Class,CUST-5877,Customer 20,Corporate,United States,Los Angeles,California,56770,East,PROD-5973,Office Supplies,Storage,Product 68,1528.51,2,0.2,-175.08
+21,ORD-2026-06-24-21,6/24/2026,6/26/2026,Standard Class,CUST-3332,Customer 21,Home Office,United States,Seattle,Washington,17629,East,PROD-6510,Technology,Tables,Product 54,232.34,6,0.3,45.87
+22,ORD-2026-06-24-22,6/24/2026,6/29/2026,Standard Class,CUST-4270,Customer 22,Consumer,United States,Seattle,Washington,61252,South,PROD-7182,Technology,Chairs,Product 4,688.52,10,0.1,-100.48
+23,ORD-2026-06-24-23,6/24/2026,6/25/2026,Same Day,CUST-6032,Customer 23,Corporate,United States,Seattle,Washington,70053,Central,PROD-7108,Technology,Phones,Product 85,1524.23,1,0.0,141.79
+24,ORD-2026-06-24-24,6/24/2026,7/1/2026,Second Class,CUST-1482,Customer 24,Corporate,United States,Seattle,Washington,66391,West,PROD-1331,Furniture,Chairs,Product 28,342.2,3,0.4,82.33
+25,ORD-2026-06-24-25,6/24/2026,6/27/2026,Same Day,CUST-6735,Customer 25,Corporate,United States,Los Angeles,California,71676,Central,PROD-8077,Technology,Tables,Product 67,1697.49,9,0.0,-215.65
+26,ORD-2026-06-24-26,6/24/2026,6/27/2026,Standard Class,CUST-2738,Customer 26,Home Office,United States,Chicago,Illinois,87022,Central,PROD-4284,Furniture,Chairs,Product 43,595.5,8,0.0,63.39
+27,ORD-2026-06-24-27,6/24/2026,6/26/2026,Same Day,CUST-6511,Customer 27,Corporate,United States,Seattle,Washington,28480,South,PROD-7795,Technology,Phones,Product 39,857.35,3,0.1,250.3
+28,ORD-2026-06-24-28,6/24/2026,6/29/2026,Same Day,CUST-8413,Customer 28,Consumer,United States,Houston,Texas,16265,East,PROD-4867,Office Supplies,Binders,Product 88,533.42,1,0.4,-54.49
+29,ORD-2026-06-24-29,6/24/2026,6/29/2026,Standard Class,CUST-3149,Customer 29,Corporate,United States,Seattle,Washington,23508,South,PROD-6429,Office Supplies,Storage,Product 70,398.1,8,0.2,28.04
+30,ORD-2026-06-24-30,6/24/2026,6/26/2026,Standard Class,CUST-6069,Customer 30,Consumer,United States,Chicago,Illinois,10709,Central,PROD-6111,Office Supplies,Chairs,Product 37,1308.59,7,0.3,-46.47
+31,ORD-2026-06-24-31,6/24/2026,6/30/2026,Standard Class,CUST-9403,Customer 31,Home Office,United States,Chicago,Illinois,36054,West,PROD-6859,Furniture,Binders,Product 70,387.76,5,0.0,-68.33
+32,ORD-2026-06-24-32,6/24/2026,6/30/2026,Standard Class,CUST-9980,Customer 32,Consumer,United States,Chicago,Illinois,47813,West,PROD-4598,Office Supplies,Phones,Product 50,370.55,2,0.0,-10.3
+33,ORD-2026-06-24-33,6/24/2026,6/26/2026,Second Class,CUST-9224,Customer 33,Corporate,United States,Chicago,Illinois,85396,West,PROD-8756,Office Supplies,Phones,Product 19,960.8,8,0.4,13.06
+34,ORD-2026-06-24-34,6/24/2026,6/29/2026,First Class,CUST-2494,Customer 34,Corporate,United States,Chicago,Illinois,53635,East,PROD-6145,Office Supplies,Chairs,Product 65,1470.76,8,0.1,189.12
+35,ORD-2026-06-24-35,6/24/2026,6/27/2026,First Class,CUST-2249,Customer 35,Home Office,United States,Seattle,Washington,40524,Central,PROD-9337,Office Supplies,Storage,Product 25,1666.05,5,0.4,-190.53
+36,ORD-2026-06-24-36,6/24/2026,6/28/2026,First Class,CUST-9594,Customer 36,Home Office,United States,Los Angeles,California,27206,Central,PROD-9402,Technology,Chairs,Product 89,1392.16,2,0.0,-129.39
+37,ORD-2026-06-24-37,6/24/2026,6/30/2026,Same Day,CUST-2845,Customer 37,Consumer,United States,Los Angeles,California,97304,West,PROD-5006,Technology,Chairs,Product 30,1333.63,2,0.3,-22.61
+38,ORD-2026-06-24-38,6/24/2026,6/30/2026,Same Day,CUST-5947,Customer 38,Consumer,United States,Los Angeles,California,69884,Central,PROD-3331,Office Supplies,Phones,Product 80,768.36,1,0.1,63.4
+39,ORD-2026-06-24-39,6/24/2026,6/27/2026,Standard Class,CUST-5476,Customer 39,Consumer,United States,Los Angeles,California,32562,West,PROD-3053,Technology,Phones,Product 92,359.32,6,0.2,59.15
+40,ORD-2026-06-24-40,6/24/2026,6/28/2026,Second Class,CUST-1882,Customer 40,Consumer,United States,New York,New York,14527,West,PROD-5143,Office Supplies,Phones,Product 46,1437.17,9,0.2,325.57
+41,ORD-2026-06-24-41,6/24/2026,6/28/2026,Standard Class,CUST-3986,Customer 41,Corporate,United States,New York,New York,95067,South,PROD-2975,Furniture,Chairs,Product 19,1857.7,9,0.3,-137.25
+42,ORD-2026-06-24-42,6/24/2026,7/1/2026,First Class,CUST-4123,Customer 42,Consumer,United States,Houston,Texas,93719,Central,PROD-8569,Technology,Tables,Product 16,106.62,5,0.4,3.25
+43,ORD-2026-06-24-43,6/24/2026,6/28/2026,Same Day,CUST-8933,Customer 43,Corporate,United States,Houston,Texas,44170,Central,PROD-3404,Office Supplies,Tables,Product 31,204.38,10,0.3,22.23
+44,ORD-2026-06-24-44,6/24/2026,6/26/2026,Same Day,CUST-8345,Customer 44,Corporate,United States,Houston,Texas,20025,Central,PROD-1092,Furniture,Phones,Product 34,1769.14,4,0.0,-290.7
+45,ORD-2026-06-24-45,6/24/2026,6/27/2026,Same Day,CUST-4296,Customer 45,Corporate,United States,Houston,Texas,26046,East,PROD-8946,Office Supplies,Chairs,Product 3,1546.4,7,0.3,-240.94
+46,ORD-2026-06-24-46,6/24/2026,6/30/2026,First Class,CUST-5936,Customer 46,Consumer,United States,Seattle,Washington,15808,Central,PROD-6547,Technology,Chairs,Product 16,1527.14,1,0.2,265.17
+47,ORD-2026-06-24-47,6/24/2026,6/28/2026,Same Day,CUST-9197,Customer 47,Consumer,United States,Seattle,Washington,87659,East,PROD-1351,Office Supplies,Storage,Product 26,145.28,4,0.0,-6.91
+48,ORD-2026-06-24-48,6/24/2026,6/30/2026,Standard Class,CUST-1642,Customer 48,Home Office,United States,Chicago,Illinois,25284,East,PROD-9472,Technology,Tables,Product 29,1082.73,2,0.3,-16.42
+49,ORD-2026-06-24-49,6/24/2026,6/28/2026,Second Class,CUST-6833,Customer 49,Home Office,United States,New York,New York,80859,East,PROD-3534,Technology,Binders,Product 95,1569.95,1,0.1,265.39
+50,ORD-2026-06-24-50,6/24/2026,6/28/2026,Same Day,CUST-1059,Customer 50,Corporate,United States,Seattle,Washington,71739,East,PROD-3610,Technology,Phones,Product 43,878.12,3,0.3,122.71
+51,ORD-2026-06-24-51,6/24/2026,6/27/2026,Same Day,CUST-7075,Customer 51,Corporate,United States,Houston,Texas,69813,Central,PROD-1221,Office Supplies,Storage,Product 37,1146.21,1,0.0,123.71
+52,ORD-2026-06-24-52,6/24/2026,6/26/2026,Second Class,CUST-4527,Customer 52,Corporate,United States,New York,New York,13537,East,PROD-2203,Furniture,Phones,Product 75,527.08,2,0.2,143.36
+53,ORD-2026-06-24-53,6/24/2026,7/1/2026,Standard Class,CUST-6642,Customer 53,Corporate,United States,Houston,Texas,83812,South,PROD-9300,Furniture,Binders,Product 56,1113.5,3,0.2,79.31
+54,ORD-2026-06-24-54,6/24/2026,6/25/2026,Second Class,CUST-4560,Customer 54,Consumer,United States,Seattle,Washington,24485,West,PROD-7886,Furniture,Tables,Product 87,672.5,7,0.3,-103.89
+55,ORD-2026-06-24-55,6/24/2026,6/30/2026,Second Class,CUST-8429,Customer 55,Home Office,United States,New York,New York,48109,East,PROD-8938,Office Supplies,Binders,Product 51,824.34,5,0.3,206.83
+56,ORD-2026-06-24-56,6/24/2026,6/27/2026,First Class,CUST-6361,Customer 56,Home Office,United States,Houston,Texas,94052,South,PROD-7702,Technology,Tables,Product 63,1949.88,1,0.4,-298.86
+57,ORD-2026-06-24-57,6/24/2026,7/1/2026,Same Day,CUST-4816,Customer 57,Corporate,United States,Houston,Texas,39741,East,PROD-3090,Office Supplies,Binders,Product 43,1807.45,9,0.3,116.91
+58,ORD-2026-06-24-58,6/24/2026,6/26/2026,Same Day,CUST-1646,Customer 58,Corporate,United States,Houston,Texas,23741,South,PROD-4226,Technology,Phones,Product 1,1780.05,10,0.3,-182.73
+59,ORD-2026-06-24-59,6/24/2026,6/27/2026,Second Class,CUST-7194,Customer 59,Consumer,United States,New York,New York,38117,Central,PROD-3279,Furniture,Phones,Product 64,298.03,3,0.1,54.76
+60,ORD-2026-06-24-60,6/24/2026,6/28/2026,Same Day,CUST-8244,Customer 60,Consumer,United States,New York,New York,93573,West,PROD-5025,Furniture,Tables,Product 43,1139.87,7,0.2,18.39
+61,ORD-2026-06-24-61,6/24/2026,6/28/2026,First Class,CUST-8643,Customer 61,Home Office,United States,Chicago,Illinois,62471,South,PROD-8415,Technology,Tables,Product 55,1868.98,7,0.0,402.13
+62,ORD-2026-06-24-62,6/24/2026,6/25/2026,First Class,CUST-8225,Customer 62,Home Office,United States,New York,New York,65003,West,PROD-4302,Furniture,Chairs,Product 90,1088.46,4,0.3,52.04
+63,ORD-2026-06-24-63,6/24/2026,6/30/2026,First Class,CUST-6034,Customer 63,Consumer,United States,Los Angeles,California,57830,Central,PROD-1611,Technology,Tables,Product 74,835.36,6,0.2,158.97
+64,ORD-2026-06-24-64,6/24/2026,6/29/2026,Standard Class,CUST-7005,Customer 64,Consumer,United States,Chicago,Illinois,23525,South,PROD-3918,Furniture,Chairs,Product 1,189.28,8,0.2,31.12
+65,ORD-2026-06-24-65,6/24/2026,6/30/2026,Standard Class,CUST-3197,Customer 65,Corporate,United States,Los Angeles,California,12579,West,PROD-9280,Technology,Storage,Product 95,1682.06,7,0.0,448.25
+66,ORD-2026-06-24-66,6/24/2026,6/29/2026,First Class,CUST-1078,Customer 66,Corporate,United States,Seattle,Washington,57468,Central,PROD-7307,Furniture,Binders,Product 51,1557.62,3,0.2,-74.73
+67,ORD-2026-06-24-67,6/24/2026,6/26/2026,Same Day,CUST-8480,Customer 67,Consumer,United States,New York,New York,30751,South,PROD-9814,Furniture,Storage,Product 2,1426.91,7,0.0,221.18
+68,ORD-2026-06-24-68,6/24/2026,6/25/2026,Standard Class,CUST-5672,Customer 68,Corporate,United States,Seattle,Washington,46026,West,PROD-6190,Office Supplies,Storage,Product 90,435.12,5,0.4,37.19
+69,ORD-2026-06-24-69,6/24/2026,6/26/2026,Standard Class,CUST-8278,Customer 69,Consumer,United States,Seattle,Washington,69221,Central,PROD-8977,Furniture,Tables,Product 21,1100.83,6,0.3,-157.57
+70,ORD-2026-06-24-70,6/24/2026,6/27/2026,First Class,CUST-3251,Customer 70,Corporate,United States,Houston,Texas,42688,Central,PROD-8564,Technology,Binders,Product 1,534.88,3,0.2,-51.69
+71,ORD-2026-06-24-71,6/24/2026,6/26/2026,Second Class,CUST-9840,Customer 71,Corporate,United States,New York,New York,62363,West,PROD-3386,Office Supplies,Chairs,Product 61,1295.41,5,0.4,118.46
+72,ORD-2026-06-24-72,6/24/2026,6/25/2026,Same Day,CUST-7108,Customer 72,Corporate,United States,Seattle,Washington,74380,Central,PROD-4878,Technology,Chairs,Product 99,1963.28,2,0.3,404.01
+73,ORD-2026-06-24-73,6/24/2026,6/26/2026,First Class,CUST-8987,Customer 73,Consumer,United States,Los Angeles,California,37735,Central,PROD-5199,Technology,Phones,Product 28,807.61,2,0.2,46.19
+74,ORD-2026-06-24-74,6/24/2026,6/27/2026,Same Day,CUST-9852,Customer 74,Corporate,United States,Chicago,Illinois,35216,South,PROD-4857,Furniture,Storage,Product 36,637.7,5,0.1,-106.85
+75,ORD-2026-06-24-75,6/24/2026,7/1/2026,First Class,CUST-7272,Customer 75,Home Office,United States,Houston,Texas,99004,East,PROD-2701,Technology,Tables,Product 30,1272.19,3,0.4,-147.62
+76,ORD-2026-06-24-76,6/24/2026,6/26/2026,Second Class,CUST-9170,Customer 76,Corporate,United States,Seattle,Washington,33600,East,PROD-3966,Technology,Storage,Product 42,489.53,7,0.1,-22.53
+77,ORD-2026-06-24-77,6/24/2026,6/26/2026,Second Class,CUST-3575,Customer 77,Consumer,United States,New York,New York,92924,South,PROD-6681,Technology,Phones,Product 58,28.53,3,0.4,2.97
+78,ORD-2026-06-24-78,6/24/2026,6/25/2026,Standard Class,CUST-1253,Customer 78,Corporate,United States,Los Angeles,California,28788,Central,PROD-1879,Office Supplies,Chairs,Product 73,797.42,7,0.3,-124.49
+79,ORD-2026-06-24-79,6/24/2026,6/30/2026,Second Class,CUST-9554,Customer 79,Corporate,United States,Seattle,Washington,35479,West,PROD-8477,Office Supplies,Binders,Product 32,578.83,4,0.1,-108.38
+80,ORD-2026-06-24-80,6/24/2026,6/25/2026,First Class,CUST-1522,Customer 80,Home Office,United States,Seattle,Washington,39508,South,PROD-9806,Office Supplies,Tables,Product 62,1636.01,7,0.0,-254.03
+81,ORD-2026-06-24-81,6/24/2026,6/25/2026,Second Class,CUST-6846,Customer 81,Consumer,United States,Chicago,Illinois,23542,South,PROD-6608,Office Supplies,Chairs,Product 69,1682.01,1,0.2,426.55
+82,ORD-2026-06-24-82,6/24/2026,6/30/2026,Second Class,CUST-9929,Customer 82,Corporate,United States,Los Angeles,California,91725,East,PROD-6722,Office Supplies,Chairs,Product 20,845.3,9,0.2,248.34
+83,ORD-2026-06-24-83,6/24/2026,6/28/2026,Second Class,CUST-1390,Customer 83,Corporate,United States,Houston,Texas,32648,Central,PROD-7464,Furniture,Chairs,Product 2,1320.81,10,0.4,-50.72
+84,ORD-2026-06-24-84,6/24/2026,6/29/2026,Same Day,CUST-6030,Customer 84,Home Office,United States,New York,New York,42014,South,PROD-4593,Office Supplies,Chairs,Product 12,523.77,5,0.2,3.08
+85,ORD-2026-06-24-85,6/24/2026,6/30/2026,Second Class,CUST-2905,Customer 85,Home Office,United States,Chicago,Illinois,48125,West,PROD-1922,Technology,Storage,Product 86,49.35,9,0.2,10.17
+86,ORD-2026-06-24-86,6/24/2026,6/25/2026,First Class,CUST-8000,Customer 86,Corporate,United States,Los Angeles,California,69326,South,PROD-1123,Technology,Storage,Product 6,962.62,7,0.3,186.65
+87,ORD-2026-06-24-87,6/24/2026,6/28/2026,Same Day,CUST-5811,Customer 87,Home Office,United States,Houston,Texas,11107,South,PROD-3831,Technology,Phones,Product 45,996.89,2,0.3,150.07
+88,ORD-2026-06-24-88,6/24/2026,6/27/2026,First Class,CUST-3326,Customer 88,Corporate,United States,Los Angeles,California,19136,South,PROD-7875,Office Supplies,Chairs,Product 1,1900.64,4,0.1,-323.73
+89,ORD-2026-06-24-89,6/24/2026,6/30/2026,First Class,CUST-6847,Customer 89,Corporate,United States,Seattle,Washington,91985,West,PROD-9783,Technology,Storage,Product 21,1183.02,6,0.0,24.52
+90,ORD-2026-06-24-90,6/24/2026,6/27/2026,Standard Class,CUST-7353,Customer 90,Consumer,United States,Chicago,Illinois,78448,East,PROD-1402,Technology,Chairs,Product 79,1355.78,9,0.2,249.09
+91,ORD-2026-06-24-91,6/24/2026,7/1/2026,Second Class,CUST-6312,Customer 91,Corporate,United States,Chicago,Illinois,32526,Central,PROD-2341,Technology,Binders,Product 36,195.11,4,0.1,-3.46
+92,ORD-2026-06-24-92,6/24/2026,6/25/2026,Second Class,CUST-6196,Customer 92,Corporate,United States,New York,New York,86137,West,PROD-5419,Technology,Chairs,Product 18,1562.58,1,0.4,171.87
+93,ORD-2026-06-24-93,6/24/2026,6/29/2026,Standard Class,CUST-6281,Customer 93,Consumer,United States,Seattle,Washington,52467,South,PROD-9407,Office Supplies,Phones,Product 83,114.08,7,0.0,-3.29
+94,ORD-2026-06-24-94,6/24/2026,6/27/2026,First Class,CUST-4436,Customer 94,Consumer,United States,Los Angeles,California,26949,Central,PROD-9533,Technology,Tables,Product 89,864.22,7,0.1,-112.29
+95,ORD-2026-06-24-95,6/24/2026,6/29/2026,Second Class,CUST-6157,Customer 95,Consumer,United States,New York,New York,67546,West,PROD-5525,Furniture,Storage,Product 62,1444.74,4,0.2,193.1
+96,ORD-2026-06-24-96,6/24/2026,6/27/2026,Same Day,CUST-3354,Customer 96,Corporate,United States,New York,New York,28374,South,PROD-8117,Technology,Phones,Product 7,1643.06,3,0.0,165.13
+97,ORD-2026-06-24-97,6/24/2026,6/30/2026,Second Class,CUST-4306,Customer 97,Consumer,United States,Seattle,Washington,65152,Central,PROD-5794,Furniture,Binders,Product 41,556.16,1,0.4,159.96
+98,ORD-2026-06-24-98,6/24/2026,6/29/2026,Second Class,CUST-2670,Customer 98,Home Office,United States,Chicago,Illinois,15885,East,PROD-1640,Furniture,Binders,Product 65,1808.27,4,0.4,-24.19
+99,ORD-2026-06-24-99,6/24/2026,6/29/2026,Same Day,CUST-6798,Customer 99,Consumer,United States,Houston,Texas,84720,West,PROD-5814,Furniture,Phones,Product 34,1540.34,5,0.4,159.66
+100,ORD-2026-06-24-100,6/24/2026,6/30/2026,Second Class,CUST-8910,Customer 100,Home Office,United States,Houston,Texas,25046,Central,PROD-3288,Furniture,Storage,Product 50,1321.38,10,0.3,-70.54
