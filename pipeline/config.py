@@ -1,0 +1,6 @@
+INCOMING_FOLDER = "data/incoming"
+RAW_FOLDER = "data/raw"
+PROCESSED_FOLDER = "data/processed"
+REJECTED_FOLDER = "data/rejected"
+ARCHIVE_FOLDER = "data/archive"
+LOG_FILE_PATH = "data/logs/pipeline_log.txt"

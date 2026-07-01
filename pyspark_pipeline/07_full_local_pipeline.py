@@ -40,7 +40,19 @@ write_log("Pipeline started")
 # FILE PATH SETUP
 # ====================================================
 
-incoming_file_path = "data/incoming/sales_2026-06-30.csv"
+incoming_folder = "data/incoming"
+
+incoming_files = [
+    os.path.join(incoming_folder, file)
+    for file in os.listdir(incoming_folder)
+    if file.endswith(".csv")
+]
+
+if not incoming_files:
+    write_log("No incoming CSV files found. Pipeline stopped.")
+    sys.exit()
+
+incoming_file_path = max(incoming_files, key=os.path.getmtime)
 
 file_name = os.path.basename(incoming_file_path)
 folder_name = os.path.splitext(file_name)[0]
