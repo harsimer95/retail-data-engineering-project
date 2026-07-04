@@ -5,19 +5,28 @@ from pipeline.file_manager import (
     copy_to_raw,
     archive_incoming_file
 )
+
 from pipeline.spark_utils import create_spark_session
+
 from pipeline.transform import (
     standardize_column_names,
     convert_data_types,
     add_features
 )
+
 from pipeline.validate import (
     apply_business_rules,
     split_valid_rejected
 )
 
+from pipeline.azure_blob import (
+    upload_file,
+    upload_folder
+)
+
 
 def main():
+
     write_log("Pipeline started")
 
     incoming_file_path = get_latest_incoming_file()
@@ -26,6 +35,16 @@ def main():
     copy_to_raw(
         incoming_file_path,
         paths["raw_file_path"]
+    )
+
+    upload_file(
+        container_name="raw",
+        local_file_path=paths["raw_file_path"],
+        blob_name=paths["file_name"]
+    )
+
+    write_log(
+        f"Raw file uploaded to Azure Blob Storage: raw/{paths['file_name']}"
     )
 
     spark = create_spark_session()
@@ -39,7 +58,9 @@ def main():
         .option("encoding", "ISO-8859-1") \
         .csv(paths["raw_file_path"])
 
-    write_log(f"Raw file loaded into Spark: {paths['raw_file_path']}")
+    write_log(
+        f"Raw file loaded into Spark: {paths['raw_file_path']}"
+    )
 
     df = standardize_column_names(df)
     write_log("Column names standardized")
@@ -61,12 +82,13 @@ def main():
 
     write_log(f"Input file: {incoming_file_path}")
     write_log(f"Raw file: {paths['raw_file_path']}")
-    write_log(f"Output folder name: {paths['folder_name']}")
+    write_log(f"Output folder: {paths['folder_name']}")
     write_log(f"Total records: {total_records}")
     write_log(f"Valid records: {valid_records}")
     write_log(f"Rejected records: {rejected_records}")
 
-    print("Sample rejected records:")
+    print("\nSample rejected records:")
+
     rejected_df.select(
         "row_id",
         "order_id",
@@ -78,18 +100,67 @@ def main():
         "rejection_reason"
     ).show(10, truncate=False)
 
-    valid_df.write.mode("overwrite").parquet(paths["processed_output_path"])
-    rejected_df.write.mode("overwrite").parquet(paths["rejected_output_path"])
+    valid_df.write.mode("overwrite").parquet(
+        paths["processed_output_path"]
+    )
 
-    write_log(f"Valid processed data saved to: {paths['processed_output_path']}")
-    write_log(f"Rejected data saved to: {paths['rejected_output_path']}")
+    rejected_df.write.mode("overwrite").parquet(
+        paths["rejected_output_path"]
+    )
+
+    write_log(
+        f"Valid processed data saved to: {paths['processed_output_path']}"
+    )
+
+    write_log(
+        f"Rejected data saved to: {paths['rejected_output_path']}"
+    )
+
+    upload_folder(
+        container_name="processed",
+        local_folder_path=paths["processed_output_path"],
+        blob_folder_name=paths["folder_name"]
+    )
+
+    write_log(
+        f"Processed data uploaded to Azure: processed/{paths['folder_name']}"
+    )
+
+    upload_folder(
+        container_name="rejected",
+        local_folder_path=paths["rejected_output_path"],
+        blob_folder_name=paths["folder_name"]
+    )
+
+    write_log(
+        f"Rejected data uploaded to Azure: rejected/{paths['folder_name']}"
+    )
 
     archive_incoming_file(
         incoming_file_path,
         paths["archive_file_path"]
     )
 
+    upload_file(
+        container_name="archive",
+        local_file_path=paths["archive_file_path"],
+        blob_name=paths["file_name"]
+    )
+
+    write_log(
+        f"Archived file uploaded to Azure: archive/{paths['file_name']}"
+    )
+
+    upload_file(
+        container_name="logs",
+        local_file_path="data/logs/pipeline_log.txt",
+        blob_name="pipeline_log.txt"
+    )
+
+    write_log("Pipeline log uploaded to Azure")
+
     spark.stop()
+
     write_log("Spark session stopped")
     write_log("Pipeline completed successfully")
 
