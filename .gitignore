@@ -1,1 +1,21 @@
+# Python virtual environments
+.venv/
+.venv311/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
 .env
+
+# Spark
+spark-warehouse/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
