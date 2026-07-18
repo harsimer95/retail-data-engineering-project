@@ -68,6 +68,16 @@ def upload_folder(container_name, local_folder_path, blob_folder_name):
 
         for file_name in files:
 
+            # Skip Spark checksum files and marker files
+            if file_name.startswith("."):
+                continue
+
+            if file_name == "_SUCCESS":
+                continue
+
+            if not file_name.endswith(".parquet"):
+                continue
+
             local_file_path = os.path.join(root, file_name)
 
             relative_path = os.path.relpath(

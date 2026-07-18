@@ -127,3 +127,64 @@
 [2026-07-04 16:19:53] Pipeline log uploaded to Azure
 [2026-07-04 16:19:53] Spark session stopped
 [2026-07-04 16:19:53] Pipeline completed successfully
+[2026-07-17 18:55:25] Pipeline started
+[2026-07-17 18:55:25] No incoming CSV files found. Pipeline stopped.
+[2026-07-17 18:55:27] Pipeline log uploaded to Azure
+[2026-07-17 18:57:19] Pipeline started
+[2026-07-17 18:57:19] Latest incoming file detected: data/incoming\sales_2026-07-17.csv
+[2026-07-17 18:57:19] File copied to raw zone: data/raw\sales_2026-07-17.csv
+[2026-07-17 18:57:19] Incoming file copied to raw folder: data/raw\sales_2026-07-17.csv
+[2026-07-17 18:57:19] Raw file uploaded to Azure Blob Storage: raw/sales_2026-07-17.csv
+[2026-07-17 18:57:28] Spark session started
+[2026-07-17 18:57:30] Raw file loaded into Spark: data/raw\sales_2026-07-17.csv
+[2026-07-17 18:57:31] Column names standardized
+[2026-07-17 18:57:31] Data type conversions completed
+[2026-07-17 18:57:31] Feature engineering completed
+[2026-07-17 18:57:31] Business rule validation completed
+[2026-07-17 18:57:34] Input file: data/incoming\sales_2026-07-17.csv
+[2026-07-17 18:57:34] Raw file: data/raw\sales_2026-07-17.csv
+[2026-07-17 18:57:34] Output folder: sales_2026-07-17
+[2026-07-17 18:57:34] Total records: 100
+[2026-07-17 18:57:34] Valid records: 95
+[2026-07-17 18:57:34] Rejected records: 5
+[2026-07-17 18:57:36] Valid processed data saved to: data/processed\sales_2026-07-17
+[2026-07-17 18:57:36] Rejected data saved to: data/rejected\sales_2026-07-17
+[2026-07-17 18:57:36] Processed data uploaded to Azure: processed/sales_2026-07-17
+[2026-07-17 18:57:36] Rejected data uploaded to Azure: rejected/sales_2026-07-17
+[2026-07-17 18:57:37] Azure SQL table dbo.retail_sales is ready
+[2026-07-17 18:57:39] Processed data loaded into Azure SQL from: data/processed\sales_2026-07-17
+[2026-07-17 18:57:39] Original incoming file moved to archive: data/archive\sales_2026-07-17.csv
+[2026-07-17 18:57:39] Incoming file archived locally: data/archive\sales_2026-07-17.csv
+[2026-07-17 18:57:39] Archived file uploaded to Azure: archive/sales_2026-07-17.csv
+[2026-07-17 18:57:39] Pipeline completed successfully
+[2026-07-17 18:57:40] Spark session stopped
+[2026-07-17 18:57:40] Pipeline log uploaded to Azure
+[2026-07-17 19:07:08] Pipeline started
+[2026-07-17 19:07:08] Latest incoming file detected: data/incoming\sales_2026-07-17.csv
+[2026-07-17 19:07:08] File copied to raw zone: data/raw\sales_2026-07-17.csv
+[2026-07-17 19:07:08] Incoming file copied to raw folder: data/raw\sales_2026-07-17.csv
+[2026-07-17 19:07:08] Raw file uploaded to Azure Blob Storage: raw/sales_2026-07-17.csv
+[2026-07-17 19:07:15] Spark session started
+[2026-07-17 19:07:17] Raw file loaded into Spark: data/raw\sales_2026-07-17.csv
+[2026-07-17 19:07:17] Column names standardized
+[2026-07-17 19:07:18] Data type conversions completed
+[2026-07-17 19:07:18] Feature engineering completed
+[2026-07-17 19:07:18] Business rule validation completed
+[2026-07-17 19:07:20] Input file: data/incoming\sales_2026-07-17.csv
+[2026-07-17 19:07:20] Raw file: data/raw\sales_2026-07-17.csv
+[2026-07-17 19:07:20] Output folder: sales_2026-07-17
+[2026-07-17 19:07:20] Total records: 100
+[2026-07-17 19:07:20] Valid records: 95
+[2026-07-17 19:07:20] Rejected records: 5
+[2026-07-17 19:07:23] Valid processed data saved to: data/processed\sales_2026-07-17
+[2026-07-17 19:07:23] Rejected data saved to: data/rejected\sales_2026-07-17
+[2026-07-17 19:07:23] Processed data uploaded to Azure: processed/sales_2026-07-17
+[2026-07-17 19:07:23] Rejected data uploaded to Azure: rejected/sales_2026-07-17
+[2026-07-17 19:07:24] Azure SQL table dbo.retail_sales is ready
+[2026-07-17 19:07:26] Processed data loaded into Azure SQL from: data/processed\sales_2026-07-17
+[2026-07-17 19:07:26] Original incoming file moved to archive: data/archive\sales_2026-07-17.csv
+[2026-07-17 19:07:26] Incoming file archived locally: data/archive\sales_2026-07-17.csv
+[2026-07-17 19:07:26] Archived file uploaded to Azure: archive/sales_2026-07-17.csv
+[2026-07-17 19:07:26] Pipeline completed successfully
+[2026-07-17 19:07:26] Spark session stopped
+[2026-07-17 19:07:27] Pipeline log uploaded to Azure
